@@ -1,17 +1,15 @@
 import './App.css';
-import { One } from './firstcomponent';
-import { Two } from './secondcomponent';
-import { Three } from './thirdcomponent';
-import { Four } from './fourthcomponent';
+import Heading from './First';
+import InputFields from './Second';
+import Button from './Third';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <One/>
-        <Two/>
-        <Three/>
-        <Four/>
+        <Heading/>
+        <InputFields/>
+        <Button/>
       </header>
     </div>
   );
