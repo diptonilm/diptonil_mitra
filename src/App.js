@@ -4,20 +4,29 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      class Solution {
+    public int romanToInt(String s) {
+        Map<Character , Integer> map= new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+
+        int result = map.get(s.charAt(s.length()-1));
+        for(int i=s.length()-2; i>=0; i--){
+            if(map.get(s.charAt(i))<map.get(s.charAt(i+1))){
+                result = result - map.get(s.charAt(i));
+            }
+            else{
+                result = result + map.get(s.charAt(i));
+            }
+        }
+        return result;
+    }
+}
     </div>
   );
 }
