@@ -1,0 +1,25 @@
+.list-content{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 300px;
+}
+
+.color-list{
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.color-list1{
+    text-decoration: none;
+    padding-right: 30px;
+    /* margin-bottom: 60px; */
+}
+
+.color-list2{
+    text-decoration: none;
+    color: black;
+}
+

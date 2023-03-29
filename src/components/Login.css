@@ -1,0 +1,28 @@
+Button{
+    margin-top: 20px;
+    margin-left: 340px;
+}
+
+.left-data{
+    margin-top: 30px;
+}
+
+.input-field{
+    max-width: 400px;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+
+.input-field-start{
+    max-width: 400px;
+    margin-left: 450px;
+}
+
+.paragraph{
+    margin-right: 150px;
+    /* margin-bottom: 9000px; */
+}
+
+.span{
+    margin-bottom: 1000px;
+}
